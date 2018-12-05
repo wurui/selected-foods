@@ -2,12 +2,10 @@
     <xsl:template match="/root" name="wurui.selected-foods">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-selected-foods" ox-mod="selected-foods">
-            <xsl:for-each select="data/table-menu/i">
+            <xsl:for-each select="data/ui-imglist/i">
             	<a href="{href}">
             	<span class="foodshow" style="background-image:url({icon})">
-            		<xsl:if test="tag !='' ">
-            			<em class="tag"><xsl:value-of select="tag"/></em>
-            		</xsl:if>
+            		
             		<b><xsl:value-of select="title"/></b>
             	</span>
             	</a>
