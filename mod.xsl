@@ -4,10 +4,10 @@
         <div class="J_OXMod oxmod-selected-foods" ox-mod="selected-foods">
             <xsl:for-each select="data/ui-imglist/i">
             	<a href="{href}">
-            	<span class="foodshow" style="background-image:url({icon})">
-            		
-            		<b><xsl:value-of select="title"/></b>
-            	</span>
+                	<span class="foodshow" style="background-image:url({img})">
+                		
+                		<b><xsl:value-of select="title"/></b>
+                	</span>
             	</a>
             </xsl:for-each>
         </div>
